@@ -1,0 +1,1479 @@
+**************** STARTING PROGRAM ****************
+✓ File exists at specified path
+Attempting to read file...
+Warning: Column headers from the file were modified to make them valid MATLAB identifiers before creating variable names for the table. The original column headers are saved in the VariableDescriptions property.
+Set 'VariableNamingRule' to 'preserve' to use the original column headers as table variable names.
+✓ Successfully read the file!
+→ Number of rows: 3775534
+→ Number of columns: 208
+1. BASIC INFORMATION:
+→ Number of rows: 3775534
+→ Number of columns: 208
+→ Total data points: 785311072
+2. COLUMN INFORMATION:
+Column Name                    Data Type      
+----------------------------------------
+timestamp                      double         
+length                         double         
+src_ip                         cell           
+dst_ip                         cell           
+protocol                       double         
+FlowID                         cell           
+SrcIP                          cell           
+SrcPort                        double         
+DstIP                          cell           
+DstPort                        double         
+Protocol                       double         
+Timestamp                      datetime       
+FlowDuration                   double         
+TotFwdPkts                     double         
+TotBwdPkts                     double         
+TotLenFwdPkts                  double         
+TotLenBwdPkts                  double         
+FwdPktLenMax                   double         
+FwdPktLenMin                   double         
+FwdPktLenMean                  double         
+FwdPktLenStd                   double         
+BwdPktLenMax                   double         
+BwdPktLenMin                   double         
+BwdPktLenMean                  double         
+BwdPktLenStd                   double         
+FlowByts_s                     double         
+FlowPkts_s                     double         
+FlowIATMean                    double         
+FlowIATStd                     double         
+FlowIATMax                     double         
+FlowIATMin                     double         
+FwdIATTot                      double         
+FwdIATMean                     double         
+FwdIATStd                      double         
+FwdIATMax                      double         
+FwdIATMin                      double         
+BwdIATTot                      double         
+BwdIATMean                     double         
+BwdIATStd                      double         
+BwdIATMax                      double         
+BwdIATMin                      double         
+FwdPSHFlags                    double         
+BwdPSHFlags                    double         
+FwdURGFlags                    double         
+BwdURGFlags                    double         
+FwdHeaderLen                   double         
+BwdHeaderLen                   double         
+FwdPkts_s                      double         
+BwdPkts_s                      double         
+PktLenMin                      double         
+PktLenMax                      double         
+PktLenMean                     double         
+PktLenStd                      double         
+PktLenVar                      double         
+FINFlagCnt                     double         
+SYNFlagCnt                     double         
+RSTFlagCnt                     double         
+PSHFlagCnt                     double         
+ACKFlagCnt                     double         
+URGFlagCnt                     double         
+CWEFlagCount                   double         
+ECEFlagCnt                     double         
+Down_UpRatio                   double         
+PktSizeAvg                     double         
+FwdSegSizeAvg                  double         
+BwdSegSizeAvg                  double         
+FwdByts_bAvg                   double         
+FwdPkts_bAvg                   double         
+FwdBlkRateAvg                  double         
+BwdByts_bAvg                   double         
+BwdPkts_bAvg                   double         
+BwdBlkRateAvg                  double         
+SubflowFwdPkts                 double         
+SubflowFwdByts                 double         
+SubflowBwdPkts                 double         
+SubflowBwdByts                 double         
+InitFwdWinByts                 double         
+InitBwdWinByts                 double         
+FwdActDataPkts                 double         
+FwdSegSizeMin                  double         
+ActiveMean                     double         
+ActiveStd                      double         
+ActiveMax                      double         
+ActiveMin                      double         
+IdleMean                       double         
+IdleStd                        double         
+IdleMax                        double         
+IdleMin                        double         
+Label                          cell           
+flowId                         double         
+protocol_1                     double         
+srcIp                          double         
+dstIp                          double         
+srcPort                        double         
+dstPort                        double         
+flowIdleTimeMax                double         
+flowIdleTimeMin                double         
+flowIdleTimeMean               double         
+flowIdleTimeStd                double         
+flowIdleTimeVariance           double         
+flowActiveTimeMax              double         
+flowActiveTimeMin              double         
+flowActiveTimeMean             double         
+flowActiveTimeStd              double         
+flowActiveTimeVariance         double         
+flowIATMax                     double         
+fwIATMax                       double         
+bwIATMax                       double         
+flowIATMin                     double         
+fwIATMin                       double         
+bwIATMin                       double         
+flowIATMean                    double         
+fwIATMean                      double         
+bwIATStd                       double         
+flowIATStd                     double         
+fwIATStd                       double         
+bwIATStd_1                     double         
+flowIATTot                     double         
+fwIATTot                       double         
+bwIATTot                       double         
+flowIec104Packts_s             double         
+fwIec104Packts_s               double         
+bwIec104Packts_s               double         
+flowIec104Bytes_s              double         
+fwIec104Bytes_s                double         
+bwIec104Bytes_s                double         
+flowPacketAPDULengthMax        double         
+flowPacketAPDULengthMin        double         
+flowPacketAPDULengthMean       double         
+flowPacketAPDULengthStd        double         
+flowPacketAPDULengthVar        double         
+fwPacketAPDULengthMax          double         
+fwPacketAPDULengthMin          double         
+fwPacketAPDULengthMean         double         
+fwPacketAPDULengthStd          double         
+fwPacketAPDULengthVar          double         
+bwPacketAPDULengthMax          double         
+bwPacketAPDULengthMin          double         
+bwPacketAPDULengthMean         double         
+bwPacketAPDULengthStd          double         
+bwPacketAPDULengthVar          double         
+totalFlowPackets               double         
+totalFwPackets                 double         
+totalBwPackets                 double         
+flowPacketsAPDUTotalLength     double         
+fwPacketsAPDUTotalLength       double         
+bwPacketsAPDUTotalLength       double         
+flowDuration                   double         
+flowDown_upRatio               double         
+flowTotalIEC104_I_Message_SeqIOAPackets double         
+fwTotalIEC104_I_Message_SeqIOAPackets double         
+bwTotalIEC104_I_Message_SeqIOAPackets double         
+flowTotalIEC104_I_Message_SingleIOAPackets double         
+fwTotalIEC104_I_Message_SingleIOAPackets double         
+bwTotalIEC104_I_Message_SingleIOAPackets double         
+flowTotalIEC104_S_MessagePackets double         
+fwTotalIEC104_S_MessagePackets double         
+bwTotalIEC104_S_MessagePackets double         
+flowTotalIEC104_U_MessagePackets double         
+fwTotalIEC104_U_MessagePackets double         
+bwTotalIEC104_U_MessagePackets double         
+fwURGFlagAmount                double         
+fwPSHFlagAmount                double         
+bwURGFlagAmount                double         
+bwPSHFlagAmount                double         
+flowSYNFlagCount               double         
+flowRSTFlagCount               double         
+flowPSHFlagCount               double         
+flowACKFlagCount               double         
+flowURGFlagCount               double         
+flowCWEFlagCount               double         
+flowECEFlagCount               double         
+fw_subflow_packets             double         
+bw_subflow_packets             double         
+fw_subflow_bytes               double         
+bw_subflow_bytes               double         
+flowStartTimestamp             double         
+fwAvgBytes_bulk                double         
+bwAvgBytes_bulk                double         
+fwAvgBulkRate                  double         
+bwAvgBulkRate                  double         
+fwAvgPackets_bulk              double         
+bwAvgPackets_bulk              double         
+initFwWindowBytes              double         
+initBwWindowBytes              double         
+fwTCPTotalHeaderLength         double         
+bwTCPTotalHeaderLength         double         
+cot_1                          double         
+cot_2                          double         
+cot_3                          double         
+cot_4                          double         
+cot_5                          double         
+cot_6                          double         
+cot_7                          double         
+cot_8                          double         
+cot_9                          double         
+cot_10                         double         
+cot_11                         double         
+cot_12                         double         
+cot_13                         double         
+cot_20                         double         
+type_id_process_information_in_monitor_direction double         
+type_id_process_information_in_control_direction double         
+type_id_system_information_in_monitor_direction double         
+type_id_system_information_in_control_direction double         
+type_id_parameter_in_control_direction double         
+type_id_file_transfer          double         
+bwIATMean                      double         
+3. DATA QUALITY CHECK:
+Missing Values Analysis:
+→ timestamp: 2738773 missing values (72.54%)
+→ length: 2738773 missing values (72.54%)
+→ src_ip: 2738773 missing values (72.54%)
+→ dst_ip: 2738773 missing values (72.54%)
+→ protocol: 2738773 missing values (72.54%)
+→ SrcPort: 1 missing values (0.00%)
+→ Timestamp: 102071 missing values (2.70%)
+→ FwdPktLenStd: 1 missing values (0.00%)
+→ BwdPktLenMean: 1 missing values (0.00%)
+→ FwdURGFlags: 1 missing values (0.00%)
+→ FwdHeaderLen: 1 missing values (0.00%)
+→ FINFlagCnt: 1 missing values (0.00%)
+→ CWEFlagCount: 1 missing values (0.00%)
+→ FwdPkts_bAvg: 1 missing values (0.00%)
+→ FwdSegSizeMin: 1 missing values (0.00%)
+→ ActiveMax: 1 missing values (0.00%)
+→ flowId: 47364 missing values (1.25%)
+→ protocol_1: 47364 missing values (1.25%)
+→ srcIp: 47364 missing values (1.25%)
+→ dstIp: 47364 missing values (1.25%)
+→ flowStartTimestamp: 47364 missing values (1.25%)
+Infinite Values Check:
+→ FlowByts_s: 2 infinite values
+→ FlowPkts_s: 5274 infinite values
+4. STATISTICAL ANALYSIS:
+Stats for timestamp:
+→ Mean: 1589021554.3161
+→ Median: 1588067057.4619
+→ Std Dev: 1640019.0769
+→ Min: 1587763927.6783
+→ Max: 1591470102.1812
+Stats for length:
+→ Mean: 69.9452
+→ Median: 70.0000
+→ Std Dev: 9.5464
+→ Min: 60.0000
+→ Max: 142.0000
+Stats for protocol:
+→ Mean: 6.0000
+→ Median: 6.0000
+→ Std Dev: 0.0000
+→ Min: 6.0000
+→ Max: 6.0000
+Stats for SrcPort:
+→ Mean: 46547.8576
+→ Median: 54535.0000
+→ Std Dev: 22095.9976
+→ Min: 0.0000
+→ Max: 5832836.9455
+Stats for DstPort:
+→ Mean: 4396.9307
+→ Median: 5355.0000
+→ Std Dev: 6488.5857
+→ Min: 0.0000
+→ Max: 7282585.1250
+Stats for Protocol:
+→ Mean: 47.3205
+→ Median: 17.0000
+→ Std Dev: 61336.6143
+→ Min: 0.0000
+→ Max: 119005916.0000
+Stats for FlowDuration:
+→ Mean: 11358929.2468
+→ Median: 103254.0000
+→ Std Dev: 30046065.7746
+→ Min: 0.0000
+→ Max: 179999988.0000
+Stats for TotFwdPkts:
+→ Mean: 11.1423
+→ Median: 1.0000
+→ Std Dev: 10853.5880
+→ Min: 0.0000
+→ Max: 20993298.0000
+Stats for TotBwdPkts:
+→ Mean: 3.9486
+→ Median: 1.0000
+→ Std Dev: 2914.1052
+→ Min: 0.0000
+→ Max: 4006897.0000
+Stats for TotLenFwdPkts:
+→ Mean: 264.4361
+→ Median: 22.0000
+→ Std Dev: 61706.5846
+→ Min: 0.0000
+→ Max: 119859502.0000
+Stats for TotLenBwdPkts:
+→ Mean: 225.4395
+→ Median: 22.0000
+→ Std Dev: 7600.1948
+→ Min: 0.0000
+→ Max: 10609282.4444
+Stats for FwdPktLenMax:
+→ Mean: 43.0020
+→ Median: 22.0000
+→ Std Dev: 6373.0600
+→ Min: 0.0000
+→ Max: 8923784.0000
+Stats for FwdPktLenMin:
+→ Mean: 41.7971
+→ Median: 22.0000
+→ Std Dev: 15219.1595
+→ Min: 0.0000
+→ Max: 20989123.0000
+Stats for FwdPktLenMean:
+→ Mean: 38.3614
+→ Median: 22.0000
+→ Std Dev: 7029.8935
+→ Min: 0.0000
+→ Max: 10953852.6667
+Stats for FwdPktLenStd:
+→ Mean: 10.6690
+→ Median: 0.0000
+→ Std Dev: 10643.2598
+→ Min: 0.0000
+→ Max: 20004026.0000
+Stats for BwdPktLenMax:
+→ Mean: 116.1250
+→ Median: 22.0000
+→ Std Dev: 10509.1560
+→ Min: 0.0000
+→ Max: 19813243.0000
+Stats for BwdPktLenMin:
+→ Mean: 66.9332
+→ Median: 22.0000
+→ Std Dev: 59852.2253
+→ Min: 0.0000
+→ Max: 115999433.0000
+Stats for BwdPktLenMean:
+→ Mean: 67.6669
+→ Median: 22.0000
+→ Std Dev: 11699.0282
+→ Min: 0.0000
+→ Max: 20904772.0000
+Stats for BwdPktLenStd:
+→ Mean: 34.7460
+→ Median: 0.0000
+→ Std Dev: 3056.7860
+→ Min: 0.0000
+→ Max: 5923311.0630
+Stats for FlowByts_s:
+→ Mean: Inf
+→ Median: 421.9288
+→ Std Dev: NaN
+→ Min: 0.0000
+→ Max: Inf
+Stats for FlowPkts_s:
+→ Mean: Inf
+→ Median: 19.2829
+→ Std Dev: NaN
+→ Min: 0.0000
+→ Max: Inf
+Stats for FlowIATMean:
+→ Mean: 2524971.7187
+→ Median: 103211.0000
+→ Std Dev: 11210319.4966
+→ Min: 0.0000
+→ Max: 119999999.0000
+Stats for FlowIATStd:
+→ Mean: 1269771.7528
+→ Median: 0.0000
+→ Std Dev: 5260024.9588
+→ Min: 0.0000
+→ Max: 84852458.7748
+Stats for FlowIATMax:
+→ Mean: 5532653.5650
+→ Median: 103244.0000
+→ Std Dev: 17470532.7426
+→ Min: 0.0000
+→ Max: 119999999.0000
+Stats for FlowIATMin:
+→ Mean: 1872297.0524
+→ Median: 101455.0000
+→ Std Dev: 10847560.2393
+→ Min: -10455.0000
+→ Max: 119999999.0000
+Stats for FwdIATTot:
+→ Mean: 8484011.3145
+→ Median: 0.0000
+→ Std Dev: 26615188.9392
+→ Min: -1.0000
+→ Max: 179995643.0000
+Stats for FwdIATMean:
+→ Mean: 1154779.3513
+→ Median: 0.0000
+→ Std Dev: 5090890.8475
+→ Min: 0.0000
+→ Max: 143387368.0000
+Stats for FwdIATStd:
+→ Mean: 1149363.2818
+→ Median: 0.0000
+→ Std Dev: 5651816.9269
+→ Min: -1.0000
+→ Max: 84852767.0733
+Stats for FwdIATMax:
+→ Mean: 3516932.9360
+→ Median: 0.0000
+→ Std Dev: 13434890.4565
+→ Min: 0.0000
+→ Max: 143387368.0000
+Stats for FwdIATMin:
+→ Mean: 518091.7911
+→ Median: 0.0000
+→ Std Dev: 3810455.2150
+→ Min: -1.0000
+→ Max: 143387368.0000
+Stats for BwdIATTot:
+→ Mean: 2358872.0121
+→ Median: 0.0000
+→ Std Dev: 14076515.8809
+→ Min: 0.0000
+→ Max: 179999988.0000
+Stats for BwdIATMean:
+→ Mean: 277403.4422
+→ Median: 0.0000
+→ Std Dev: 1557860.2492
+→ Min: 0.0000
+→ Max: 59603813.5000
+Stats for BwdIATStd:
+→ Mean: 311132.2068
+→ Median: 0.0000
+→ Std Dev: 2134317.0909
+→ Min: 0.0000
+→ Max: 84288892.5489
+Stats for BwdIATMax:
+→ Mean: 740102.9852
+→ Median: 0.0000
+→ Std Dev: 4921825.1601
+→ Min: 0.0000
+→ Max: 119982547.0000
+Stats for BwdIATMin:
+→ Mean: 15790.0941
+→ Median: 0.0000
+→ Std Dev: 338031.5202
+→ Min: 0.0000
+→ Max: 43561346.0000
+Stats for FwdPSHFlags:
+→ Mean: 8.2034
+→ Median: 0.0000
+→ Std Dev: 11955.7967
+→ Min: 0.0000
+→ Max: 20965107.0000
+Stats for BwdPSHFlags:
+→ Mean: 1.6199
+→ Median: 0.0000
+→ Std Dev: 3086.3271
+→ Min: -1.0000
+→ Max: 5996960.0000
+Stats for FwdURGFlags:
+→ Mean: 2.6506
+→ Median: 0.0000
+→ Std Dev: 5150.1727
+→ Min: 0.0000
+→ Max: 10007162.0000
+Stats for BwdURGFlags:
+→ Mean: 2.6505
+→ Median: 0.0000
+→ Std Dev: 5150.1720
+→ Min: 0.0000
+→ Max: 10007162.0000
+Stats for FwdHeaderLen:
+→ Mean: 36.3410
+→ Median: 8.0000
+→ Std Dev: 164.2144
+→ Min: 0.0000
+→ Max: 7680.0000
+Stats for BwdHeaderLen:
+→ Mean: 28.1168
+→ Median: 8.0000
+→ Std Dev: 661.5713
+→ Min: 0.0000
+→ Max: 1236198.3333
+Stats for FwdPkts_s:
+→ Mean: 2588.5702
+→ Median: 9.5188
+→ Std Dev: 47131.9615
+→ Min: 0.0000
+→ Max: 3000000.0000
+Stats for BwdPkts_s:
+→ Mean: 2623.9991
+→ Median: 9.6367
+→ Std Dev: 46704.8660
+→ Min: -1.0000
+→ Max: 4002953.0000
+Stats for PktLenMin:
+→ Mean: 32.6036
+→ Median: 22.0000
+→ Std Dev: 64.8564
+→ Min: 0.0000
+→ Max: 1076.0000
+Stats for PktLenMax:
+→ Mean: 113.6526
+→ Median: 22.0000
+→ Std Dev: 7196.5782
+→ Min: 0.0000
+→ Max: 13940588.7143
+Stats for PktLenMean:
+→ Mean: 50.2733
+→ Median: 22.0000
+→ Std Dev: 3506.8193
+→ Min: 0.0000
+→ Max: 6810483.9730
+Stats for PktLenStd:
+→ Mean: 33.5691
+→ Median: 0.0000
+→ Std Dev: 10927.9157
+→ Min: 0.0000
+→ Max: 20997336.0000
+Stats for PktLenVar:
+→ Mean: 32291.5566
+→ Median: 0.0000
+→ Std Dev: 303963.8977
+→ Min: 0.0000
+→ Max: 18159824.5971
+Stats for FINFlagCnt:
+→ Mean: 2.2455
+→ Median: 0.0000
+→ Std Dev: 4363.0798
+→ Min: 0.0000
+→ Max: 8477783.0000
+Stats for SYNFlagCnt:
+→ Mean: 0.0396
+→ Median: 0.0000
+→ Std Dev: 0.1965
+→ Min: -1.0000
+→ Max: 48.0000
+Stats for RSTFlagCnt:
+→ Mean: 2.5914
+→ Median: 0.0000
+→ Std Dev: 5035.1360
+→ Min: 0.0000
+→ Max: 9783638.5556
+Stats for PSHFlagCnt:
+→ Mean: 1.6429
+→ Median: 0.0000
+→ Std Dev: 3130.9823
+→ Min: 0.0000
+→ Max: 6083728.2192
+Stats for ACKFlagCnt:
+→ Mean: 5.5045
+→ Median: 0.0000
+→ Std Dev: 10589.0614
+→ Min: 0.0000
+→ Max: 20575323.0000
+Stats for URGFlagCnt:
+→ Mean: 2.0267
+→ Median: 0.0000
+→ Std Dev: 3165.8441
+→ Min: 0.0000
+→ Max: 5895349.0000
+Stats for CWEFlagCount:
+→ Mean: 0.4960
+→ Median: 0.0000
+→ Std Dev: 963.8329
+→ Min: 0.0000
+→ Max: 1872797.7427
+Stats for ECEFlagCnt:
+→ Mean: 1.0601
+→ Median: 0.0000
+→ Std Dev: 2059.8517
+→ Min: 0.0000
+→ Max: 4002443.0000
+Stats for Down_UpRatio:
+→ Mean: 0.8289
+→ Median: 1.0000
+→ Std Dev: 0.6162
+→ Min: 0.0000
+→ Max: 62.0000
+Stats for PktSizeAvg:
+→ Mean: 65.5108
+→ Median: 33.0000
+→ Std Dev: 5222.4712
+→ Min: 0.0000
+→ Max: 10144537.4000
+Stats for FwdSegSizeAvg:
+→ Mean: 33.7856
+→ Median: 22.0000
+→ Std Dev: 3076.1062
+→ Min: 0.0000
+→ Max: 5975650.6619
+Stats for BwdSegSizeAvg:
+→ Mean: 65.3258
+→ Median: 22.0000
+→ Std Dev: 10803.4696
+→ Min: 0.0000
+→ Max: 20989123.0000
+Stats for FwdByts_bAvg:
+→ Mean: 1.5888
+→ Median: 0.0000
+→ Std Dev: 3087.1151
+→ Min: 0.0000
+→ Max: 5998491.0000
+Stats for FwdPkts_bAvg:
+→ Mean: 0.0000
+→ Median: 0.0000
+→ Std Dev: 0.0340
+→ Min: -1.0000
+→ Max: 66.0000
+Stats for FwdBlkRateAvg:
+→ Mean: 0.0001
+→ Median: 0.0000
+→ Std Dev: 0.1314
+→ Min: 0.0000
+→ Max: 255.0000
+Stats for BwdByts_bAvg:
+→ Mean: 0.0000
+→ Median: 0.0000
+→ Std Dev: 0.0571
+→ Min: 0.0000
+→ Max: 110.0000
+Stats for BwdPkts_bAvg:
+→ Mean: -0.0000
+→ Median: 0.0000
+→ Std Dev: 0.0005
+→ Min: -1.0000
+→ Max: 0.0000
+Stats for BwdBlkRateAvg:
+→ Mean: 0.6194
+→ Median: 0.0000
+→ Std Dev: 1203.3146
+→ Min: 0.0000
+→ Max: 2338128.6000
+Stats for SubflowFwdPkts:
+→ Mean: 5.5830
+→ Median: 1.0000
+→ Std Dev: 1036.6163
+→ Min: 0.0000
+→ Max: 2013860.5955
+Stats for SubflowFwdByts:
+→ Mean: 233.1491
+→ Median: 22.0000
+→ Std Dev: 2343.5846
+→ Min: 0.0000
+→ Max: 4001381.0000
+Stats for SubflowBwdPkts:
+→ Mean: 2.5647
+→ Median: 1.0000
+→ Std Dev: 1432.1194
+→ Min: 0.0000
+→ Max: 2782661.1250
+Stats for SubflowBwdByts:
+→ Mean: 222.8069
+→ Median: 22.0000
+→ Std Dev: 5520.6535
+→ Min: 0.0000
+→ Max: 9641038.3000
+Stats for InitFwdWinByts:
+→ Mean: 2.6624
+→ Median: -1.0000
+→ Std Dev: 5063.0416
+→ Min: -1.0000
+→ Max: 8000693.0000
+Stats for InitBwdWinByts:
+→ Mean: 244.8581
+→ Median: -1.0000
+→ Std Dev: 10466.7140
+→ Min: -1.0000
+→ Max: 20004026.0000
+Stats for FwdActDataPkts:
+→ Mean: 7.2935
+→ Median: 1.0000
+→ Std Dev: 5697.7405
+→ Min: 0.0000
+→ Max: 9305583.8889
+Stats for FwdSegSizeMin:
+→ Mean: 1.7405
+→ Median: 0.0000
+→ Std Dev: 3381.8650
+→ Min: 0.0000
+→ Max: 6571210.8654
+Stats for ActiveMean:
+→ Mean: 330517.2722
+→ Median: 0.0000
+→ Std Dev: 2347249.6329
+→ Min: 0.0000
+→ Max: 138543549.0000
+Stats for ActiveStd:
+→ Mean: 111479.1247
+→ Median: 0.0000
+→ Std Dev: 779244.0349
+→ Min: 0.0000
+→ Max: 76686878.7611
+Stats for ActiveMax:
+→ Mean: 482738.0387
+→ Median: 0.0000
+→ Std Dev: 2854736.0929
+→ Min: 0.0000
+→ Max: 138543549.0000
+Stats for ActiveMin:
+→ Mean: 240298.9587
+→ Median: 0.0000
+→ Std Dev: 2228679.6635
+→ Min: 0.0000
+→ Max: 138543549.0000
+Stats for IdleMean:
+→ Mean: 4649094.9076
+→ Median: 0.0000
+→ Std Dev: 16163682.8458
+→ Min: 0.0000
+→ Max: 119999999.0000
+Stats for IdleStd:
+→ Mean: 624790.5108
+→ Median: 0.0000
+→ Std Dev: 3851920.0931
+→ Min: 0.0000
+→ Max: 77735470.7414
+Stats for IdleMax:
+→ Mean: 5357862.2888
+→ Median: 0.0000
+→ Std Dev: 17516749.1373
+→ Min: 0.0000
+→ Max: 119999999.0000
+Stats for IdleMin:
+→ Mean: 4143345.9277
+→ Median: 0.0000
+→ Std Dev: 15716262.1954
+→ Min: 0.0000
+→ Max: 119999999.0000
+Stats for flowId:
+→ Mean: 0.0000
+→ Median: 0.0000
+→ Std Dev: 0.0000
+→ Min: 0.0000
+→ Max: 0.0000
+Stats for protocol_1:
+→ Mean: 0.0000
+→ Median: 0.0000
+→ Std Dev: 0.0000
+→ Min: 0.0000
+→ Max: 0.0000
+Stats for srcIp:
+→ Mean: 0.0000
+→ Median: 0.0000
+→ Std Dev: 0.0000
+→ Min: 0.0000
+→ Max: 0.0000
+Stats for dstIp:
+→ Mean: 0.0000
+→ Median: 0.0000
+→ Std Dev: 0.0000
+→ Min: 0.0000
+→ Max: 0.0000
+Stats for srcPort:
+→ Mean: 353.1718
+→ Median: 0.0000
+→ Std Dev: 3775.5495
+→ Min: 0.0000
+→ Max: 50713.0000
+Stats for dstPort:
+→ Mean: 226.5971
+→ Median: 0.0000
+→ Std Dev: 3185.2032
+→ Min: 0.0000
+→ Max: 50713.0000
+Stats for flowIdleTimeMax:
+→ Mean: 0.3118
+→ Median: 0.0000
+→ Std Dev: 2.1302
+→ Min: 0.0000
+→ Max: 62.0104
+Stats for flowIdleTimeMin:
+→ Mean: 0.2015
+→ Median: 0.0000
+→ Std Dev: 1.3374
+→ Min: 0.0000
+→ Max: 60.5368
+Stats for flowIdleTimeMean:
+→ Mean: 0.2529
+→ Median: 0.0000
+→ Std Dev: 1.6511
+→ Min: 0.0000
+→ Max: 60.5368
+Stats for flowIdleTimeStd:
+→ Mean: 0.0374
+→ Median: 0.0000
+→ Std Dev: 0.5424
+→ Min: -1.0000
+→ Max: 29.2324
+Stats for flowIdleTimeVariance:
+→ Mean: 0.2724
+→ Median: 0.0000
+→ Std Dev: 3.6545
+→ Min: -1.0000
+→ Max: 854.5357
+Stats for flowActiveTimeMax:
+→ Mean: 0.0646
+→ Median: 0.0000
+→ Std Dev: 0.6315
+→ Min: 0.0000
+→ Max: 138.5435
+Stats for flowActiveTimeMin:
+→ Mean: 0.0001
+→ Median: 0.0000
+→ Std Dev: 0.0163
+→ Min: 0.0000
+→ Max: 7.1623
+Stats for flowActiveTimeMean:
+→ Mean: 0.0207
+→ Median: 0.0000
+→ Std Dev: 0.2098
+→ Min: 0.0000
+→ Max: 69.2720
+Stats for flowActiveTimeStd:
+→ Mean: 0.0251
+→ Median: 0.0000
+→ Std Dev: 0.2716
+→ Min: -1.0000
+→ Max: 61.4506
+Stats for flowActiveTimeVariance:
+→ Mean: 0.0683
+→ Median: 0.0000
+→ Std Dev: 5.2468
+→ Min: -1.0000
+→ Max: 3776.1706
+Stats for flowIATMax:
+→ Mean: 0.3146
+→ Median: 0.0000
+→ Std Dev: 2.1310
+→ Min: 0.0000
+→ Max: 62.0104
+Stats for fwIATMax:
+→ Mean: 0.2894
+→ Median: 0.0000
+→ Std Dev: 1.9959
+→ Min: 0.0000
+→ Max: 62.0104
+Stats for bwIATMax:
+→ Mean: 0.1386
+→ Median: 0.0000
+→ Std Dev: 1.1996
+→ Min: 0.0000
+→ Max: 60.9880
+Stats for flowIATMin:
+→ Mean: 0.0081
+→ Median: 0.0000
+→ Std Dev: 0.2824
+→ Min: -0.0105
+→ Max: 21.0237
+Stats for fwIATMin:
+→ Mean: 0.1659
+→ Median: 0.0000
+→ Std Dev: 1.2771
+→ Min: 0.0000
+→ Max: 21.0237
+Stats for bwIATMin:
+→ Mean: 0.0022
+→ Median: 0.0000
+→ Std Dev: 0.1404
+→ Min: -0.0105
+→ Max: 20.0087
+Stats for flowIATMean:
+→ Mean: 0.1088
+→ Median: 0.0000
+→ Std Dev: 0.7861
+→ Min: 0.0000
+→ Max: 21.0237
+Stats for fwIATMean:
+→ Mean: 0.2131
+→ Median: 0.0000
+→ Std Dev: 1.4241
+→ Min: 0.0000
+→ Max: 21.0237
+Stats for bwIATStd:
+→ Mean: 0.0500
+→ Median: 0.0000
+→ Std Dev: 0.4589
+→ Min: -1.0000
+→ Max: 20.0087
+Stats for flowIATStd:
+→ Mean: 0.1225
+→ Median: 0.0000
+→ Std Dev: 0.8272
+→ Min: -1.0000
+→ Max: 12.1212
+Stats for fwIATStd:
+→ Mean: 0.0315
+→ Median: 0.0000
+→ Std Dev: 0.6431
+→ Min: -1.0000
+→ Max: 13.0975
+Stats for bwIATStd_1:
+→ Mean: 0.0171
+→ Median: 0.0000
+→ Std Dev: 0.2838
+→ Min: -1.0000
+→ Max: 11.1438
+Stats for flowIATTot:
+→ Mean: 1.2200
+→ Median: 0.0000
+→ Std Dev: 9.9584
+→ Min: 0.0000
+→ Max: 180.0000
+Stats for fwIATTot:
+→ Mean: 0.8330
+→ Median: 0.0000
+→ Std Dev: 6.9602
+→ Min: 0.0000
+→ Max: 179.9227
+Stats for bwIATTot:
+→ Mean: 0.3870
+→ Median: 0.0000
+→ Std Dev: 4.0697
+→ Min: 0.0000
+→ Max: 178.1650
+Stats for flowIec104Packts_s:
+→ Mean: 0.5917
+→ Median: 0.0000
+→ Std Dev: 51.6365
+→ Min: 0.0000
+→ Max: 37000.8825
+Stats for fwIec104Packts_s:
+→ Mean: 0.3037
+→ Median: 0.0000
+→ Std Dev: 26.2950
+→ Min: 0.0000
+→ Max: 18500.4412
+Stats for bwIec104Packts_s:
+→ Mean: 0.2880
+→ Median: 0.0000
+→ Std Dev: 25.7172
+→ Min: 0.0000
+→ Max: 18500.4412
+Stats for flowIec104Bytes_s:
+→ Mean: 2.6269
+→ Median: 0.0000
+→ Std Dev: 223.7997
+→ Min: 0.0000
+→ Max: 148003.5298
+Stats for fwIec104Bytes_s:
+→ Mean: 1.4288
+→ Median: 0.0000
+→ Std Dev: 132.3176
+→ Min: 0.0000
+→ Max: 74001.7649
+Stats for bwIec104Bytes_s:
+→ Mean: 1.1980
+→ Median: 0.0000
+→ Std Dev: 104.7250
+→ Min: 0.0000
+→ Max: 74001.7649
+Stats for flowPacketAPDULengthMax:
+→ Mean: 0.3826
+→ Median: 0.0000
+→ Std Dev: 2.3388
+→ Min: 0.0000
+→ Max: 22.0000
+Stats for flowPacketAPDULengthMin:
+→ Mean: 0.1088
+→ Median: 0.0000
+→ Std Dev: 0.6573
+→ Min: 0.0000
+→ Max: 14.0000
+Stats for flowPacketAPDULengthMean:
+→ Mean: 0.2090
+→ Median: 0.0000
+→ Std Dev: 1.2901
+→ Min: 0.0000
+→ Max: 15.3333
+Stats for flowPacketAPDULengthStd:
+→ Mean: 0.1232
+→ Median: 0.0000
+→ Std Dev: 0.7814
+→ Min: -1.0000
+→ Max: 6.9282
+Stats for flowPacketAPDULengthVar:
+→ Mean: 0.6234
+→ Median: 0.0000
+→ Std Dev: 4.0190
+→ Min: -1.0000
+→ Max: 48.0000
+Stats for fwPacketAPDULengthMax:
+→ Mean: 0.3525
+→ Median: 0.0000
+→ Std Dev: 2.1808
+→ Min: 0.0000
+→ Max: 22.0000
+Stats for fwPacketAPDULengthMin:
+→ Mean: 0.1213
+→ Median: 0.0000
+→ Std Dev: 0.8096
+→ Min: 0.0000
+→ Max: 14.0000
+Stats for fwPacketAPDULengthMean:
+→ Mean: 0.2063
+→ Median: 0.0000
+→ Std Dev: 1.2844
+→ Min: 0.0000
+→ Max: 14.4000
+Stats for fwPacketAPDULengthStd:
+→ Mean: 0.1001
+→ Median: 0.0000
+→ Std Dev: 0.7623
+→ Min: -1.0000
+→ Max: 7.2111
+Stats for fwPacketAPDULengthVar:
+→ Mean: 0.5802
+→ Median: 0.0000
+→ Std Dev: 4.2558
+→ Min: -1.0000
+→ Max: 52.0000
+Stats for bwPacketAPDULengthMax:
+→ Mean: 0.3070
+→ Median: 0.0000
+→ Std Dev: 2.0558
+→ Min: 0.0000
+→ Max: 22.0000
+Stats for bwPacketAPDULengthMin:
+→ Mean: 0.0999
+→ Median: 0.0000
+→ Std Dev: 0.6402
+→ Min: 0.0000
+→ Max: 16.0000
+Stats for bwPacketAPDULengthMean:
+→ Mean: 0.1780
+→ Median: 0.0000
+→ Std Dev: 1.1732
+→ Min: 0.0000
+→ Max: 16.0000
+Stats for bwPacketAPDULengthStd:
+→ Mean: 0.0941
+→ Median: 0.0000
+→ Std Dev: 0.7127
+→ Min: -1.0000
+→ Max: 7.2111
+Stats for bwPacketAPDULengthVar:
+→ Mean: 0.5130
+→ Median: 0.0000
+→ Std Dev: 3.9426
+→ Min: -1.0000
+→ Max: 52.0000
+Stats for totalFlowPackets:
+→ Mean: 0.5520
+→ Median: 0.0000
+→ Std Dev: 8.8331
+→ Min: 0.0000
+→ Max: 610.0000
+Stats for totalFwPackets:
+→ Mean: 0.3399
+→ Median: 0.0000
+→ Std Dev: 6.9097
+→ Min: 0.0000
+→ Max: 542.0000
+Stats for totalBwPackets:
+→ Mean: 0.2121
+→ Median: 0.0000
+→ Std Dev: 2.8506
+→ Min: 0.0000
+→ Max: 466.0000
+Stats for flowPacketsAPDUTotalLength:
+→ Mean: 5.3981
+→ Median: 0.0000
+→ Std Dev: 107.0364
+→ Min: 0.0000
+→ Max: 7868.0000
+Stats for fwPacketsAPDUTotalLength:
+→ Mean: 3.8755
+→ Median: 0.0000
+→ Std Dev: 95.7388
+→ Min: 0.0000
+→ Max: 7586.0000
+Stats for bwPacketsAPDUTotalLength:
+→ Mean: 1.5226
+→ Median: 0.0000
+→ Std Dev: 32.8078
+→ Min: 0.0000
+→ Max: 6522.0000
+Stats for flowDuration:
+→ Mean: 1.2200
+→ Median: 0.0000
+→ Std Dev: 9.9584
+→ Min: 0.0000
+→ Max: 180.0000
+Stats for flowDown_upRatio:
+→ Mean: 0.0360
+→ Median: 0.0000
+→ Std Dev: 0.2789
+→ Min: -1.0000
+→ Max: 18.4615
+Stats for flowTotalIEC104_I_Message_SeqIOAPackets:
+→ Mean: 0.0000
+→ Median: 0.0000
+→ Std Dev: 0.0000
+→ Min: 0.0000
+→ Max: 0.0000
+Stats for fwTotalIEC104_I_Message_SeqIOAPackets:
+→ Mean: 0.0000
+→ Median: 0.0000
+→ Std Dev: 0.0000
+→ Min: 0.0000
+→ Max: 0.0000
+Stats for bwTotalIEC104_I_Message_SeqIOAPackets:
+→ Mean: 0.0000
+→ Median: 0.0000
+→ Std Dev: 0.0000
+→ Min: 0.0000
+→ Max: 0.0000
+Stats for flowTotalIEC104_I_Message_SingleIOAPackets:
+→ Mean: 0.3181
+→ Median: 0.0000
+→ Std Dev: 7.2005
+→ Min: 0.0000
+→ Max: 542.0000
+Stats for fwTotalIEC104_I_Message_SingleIOAPackets:
+→ Mean: 0.2513
+→ Median: 0.0000
+→ Std Dev: 6.8222
+→ Min: 0.0000
+→ Max: 541.0000
+Stats for bwTotalIEC104_I_Message_SingleIOAPackets:
+→ Mean: 0.0668
+→ Median: 0.0000
+→ Std Dev: 2.2735
+→ Min: 0.0000
+→ Max: 465.0000
+Stats for flowTotalIEC104_S_MessagePackets:
+→ Mean: 0.0864
+→ Median: 0.0000
+→ Std Dev: 1.5067
+→ Min: 0.0000
+→ Max: 110.0000
+Stats for fwTotalIEC104_S_MessagePackets:
+→ Mean: 0.0127
+→ Median: 0.0000
+→ Std Dev: 0.5335
+→ Min: 0.0000
+→ Max: 100.0000
+Stats for bwTotalIEC104_S_MessagePackets:
+→ Mean: 0.0737
+→ Median: 0.0000
+→ Std Dev: 1.3981
+→ Min: 0.0000
+→ Max: 109.0000
+Stats for flowTotalIEC104_U_MessagePackets:
+→ Mean: 0.1475
+→ Median: 0.0000
+→ Std Dev: 1.1724
+→ Min: 0.0000
+→ Max: 26.0000
+Stats for fwTotalIEC104_U_MessagePackets:
+→ Mean: 0.0759
+→ Median: 0.0000
+→ Std Dev: 0.6015
+→ Min: 0.0000
+→ Max: 13.0000
+Stats for bwTotalIEC104_U_MessagePackets:
+→ Mean: 0.0716
+→ Median: 0.0000
+→ Std Dev: 0.5856
+→ Min: 0.0000
+→ Max: 13.0000
+Stats for fwURGFlagAmount:
+→ Mean: 0.0000
+→ Median: 0.0000
+→ Std Dev: 0.0000
+→ Min: 0.0000
+→ Max: 0.0000
+Stats for fwPSHFlagAmount:
+→ Mean: 0.3399
+→ Median: 0.0000
+→ Std Dev: 6.9097
+→ Min: 0.0000
+→ Max: 542.0000
+Stats for bwURGFlagAmount:
+→ Mean: 0.0000
+→ Median: 0.0000
+→ Std Dev: 0.0000
+→ Min: 0.0000
+→ Max: 0.0000
+Stats for bwPSHFlagAmount:
+→ Mean: 0.2121
+→ Median: 0.0000
+→ Std Dev: 2.8506
+→ Min: 0.0000
+→ Max: 466.0000
+Stats for flowSYNFlagCount:
+→ Mean: 0.0000
+→ Median: 0.0000
+→ Std Dev: 0.0000
+→ Min: 0.0000
+→ Max: 0.0000
+Stats for flowRSTFlagCount:
+→ Mean: 0.0000
+→ Median: 0.0000
+→ Std Dev: 0.0000
+→ Min: 0.0000
+→ Max: 0.0000
+Stats for flowPSHFlagCount:
+→ Mean: 0.5520
+→ Median: 0.0000
+→ Std Dev: 8.8331
+→ Min: 0.0000
+→ Max: 610.0000
+Stats for flowACKFlagCount:
+→ Mean: 0.5520
+→ Median: 0.0000
+→ Std Dev: 8.8331
+→ Min: 0.0000
+→ Max: 610.0000
+Stats for flowURGFlagCount:
+→ Mean: 0.0000
+→ Median: 0.0000
+→ Std Dev: 0.0000
+→ Min: 0.0000
+→ Max: 0.0000
+Stats for flowCWEFlagCount:
+→ Mean: 0.0000
+→ Median: 0.0000
+→ Std Dev: 0.0000
+→ Min: 0.0000
+→ Max: 0.0000
+Stats for flowECEFlagCount:
+→ Mean: 0.0000
+→ Median: 0.0000
+→ Std Dev: 0.0000
+→ Min: 0.0000
+→ Max: 0.0000
+Stats for fw_subflow_packets:
+→ Mean: 0.0535
+→ Median: 0.0000
+→ Std Dev: 0.7475
+→ Min: 0.0000
+→ Max: 92.0000
+Stats for bw_subflow_packets:
+→ Mean: 0.0748
+→ Median: 0.0000
+→ Std Dev: 0.7315
+→ Min: 0.0000
+→ Max: 86.0000
+Stats for fw_subflow_bytes:
+→ Mean: 0.3680
+→ Median: 0.0000
+→ Std Dev: 7.1818
+→ Min: 0.0000
+→ Max: 1288.0000
+Stats for bw_subflow_bytes:
+→ Mean: 0.4845
+→ Median: 0.0000
+→ Std Dev: 4.9253
+→ Min: 0.0000
+→ Max: 1194.0000
+Stats for flowStartTimestamp:
+→ Mean: 0.0000
+→ Median: 0.0000
+→ Std Dev: 0.0000
+→ Min: 0.0000
+→ Max: 0.0000
+Stats for fwAvgBytes_bulk:
+→ Mean: 0.1303
+→ Median: 0.0000
+→ Std Dev: 3.9010
+→ Min: 0.0000
+→ Max: 438.0000
+Stats for bwAvgBytes_bulk:
+→ Mean: 0.0239
+→ Median: 0.0000
+→ Std Dev: 1.3082
+→ Min: 0.0000
+→ Max: 330.4000
+Stats for fwAvgBulkRate:
+→ Mean: 0.0634
+→ Median: 0.0000
+→ Std Dev: 3.6893
+→ Min: 0.0000
+→ Max: 1959.6984
+Stats for bwAvgBulkRate:
+→ Mean: 0.0419
+→ Median: 0.0000
+→ Std Dev: 6.4430
+→ Min: 0.0000
+→ Max: 4719.0047
+Stats for fwAvgPackets_bulk:
+→ Mean: 0.0093
+→ Median: 0.0000
+→ Std Dev: 0.2791
+→ Min: 0.0000
+→ Max: 32.0000
+Stats for bwAvgPackets_bulk:
+→ Mean: 0.0019
+→ Median: 0.0000
+→ Std Dev: 0.0997
+→ Min: 0.0000
+→ Max: 23.6000
+Stats for initFwWindowBytes:
+→ Mean: 36.3008
+→ Median: 0.0000
+→ Std Dev: 648.1191
+→ Min: 0.0000
+→ Max: 16425.0000
+Stats for initBwWindowBytes:
+→ Mean: 100.6196
+→ Median: 0.0000
+→ Std Dev: 1243.3832
+→ Min: 0.0000
+→ Max: 16425.0000
+Stats for fwTCPTotalHeaderLength:
+→ Mean: 7.4830
+→ Median: 0.0000
+→ Std Dev: 138.6310
+→ Min: 0.0000
+→ Max: 10840.0000
+Stats for bwTCPTotalHeaderLength:
+→ Mean: 5.2472
+→ Median: 0.0000
+→ Std Dev: 59.3799
+→ Min: 0.0000
+→ Max: 9320.0000
+Stats for cot_1:
+→ Mean: 0.0028
+→ Median: 0.0000
+→ Std Dev: 0.0596
+→ Min: 0.0000
+→ Max: 5.0000
+Stats for cot_2:
+→ Mean: 0.0000
+→ Median: 0.0000
+→ Std Dev: 0.0000
+→ Min: 0.0000
+→ Max: 0.0000
+Stats for cot_3:
+→ Mean: 0.2590
+→ Median: 0.0000
+→ Std Dev: 7.1649
+→ Min: 0.0000
+→ Max: 541.0000
+Stats for cot_4:
+→ Mean: 0.0000
+→ Median: 0.0000
+→ Std Dev: 0.0000
+→ Min: 0.0000
+→ Max: 0.0000
+Stats for cot_5:
+→ Mean: 0.0000
+→ Median: 0.0000
+→ Std Dev: 0.0000
+→ Min: 0.0000
+→ Max: 0.0000
+Stats for cot_6:
+→ Mean: 0.0181
+→ Median: 0.0000
+→ Std Dev: 0.1333
+→ Min: 0.0000
+→ Max: 1.0000
+Stats for cot_7:
+→ Mean: 0.0284
+→ Median: 0.0000
+→ Std Dev: 0.2153
+→ Min: 0.0000
+→ Max: 5.0000
+Stats for cot_8:
+→ Mean: 0.0000
+→ Median: 0.0000
+→ Std Dev: 0.0000
+→ Min: 0.0000
+→ Max: 0.0000
+Stats for cot_9:
+→ Mean: 0.0000
+→ Median: 0.0000
+→ Std Dev: 0.0000
+→ Min: 0.0000
+→ Max: 0.0000
+Stats for cot_10:
+→ Mean: 0.0056
+→ Median: 0.0000
+→ Std Dev: 0.0871
+→ Min: 0.0000
+→ Max: 5.0000
+Stats for cot_11:
+→ Mean: 0.0000
+→ Median: 0.0000
+→ Std Dev: 0.0000
+→ Min: 0.0000
+→ Max: 0.0000
+Stats for cot_12:
+→ Mean: 0.0000
+→ Median: 0.0000
+→ Std Dev: 0.0000
+→ Min: 0.0000
+→ Max: 0.0000
+Stats for cot_13:
+→ Mean: 0.0000
+→ Median: 0.0000
+→ Std Dev: 0.0000
+→ Min: 0.0000
+→ Max: 0.0000
+Stats for cot_20:
+→ Mean: 0.0042
+→ Median: 0.0000
+→ Std Dev: 0.0650
+→ Min: 0.0000
+→ Max: 1.0000
+Stats for type_id_process_information_in_monitor_direction:
+→ Mean: 0.2661
+→ Median: 0.0000
+→ Std Dev: 7.1709
+→ Min: 0.0000
+→ Max: 541.0000
+Stats for type_id_process_information_in_control_direction:
+→ Mean: 0.0182
+→ Median: 0.0000
+→ Std Dev: 0.2275
+→ Min: 0.0000
+→ Max: 8.0000
+Stats for type_id_system_information_in_monitor_direction:
+→ Mean: 0.0000
+→ Median: 0.0000
+→ Std Dev: 0.0000
+→ Min: 0.0000
+→ Max: 0.0000
+Stats for type_id_system_information_in_control_direction:
+→ Mean: 0.0339
+→ Median: 0.0000
+→ Std Dev: 0.2855
+→ Min: 0.0000
+→ Max: 7.0000
+Stats for type_id_parameter_in_control_direction:
+→ Mean: 0.0000
+→ Median: 0.0000
+→ Std Dev: 0.0000
+→ Min: 0.0000
+→ Max: 0.0000
+Stats for type_id_file_transfer:
+→ Mean: 0.0000
+→ Median: 0.0000
+→ Std Dev: 0.0000
+→ Min: 0.0000
+→ Max: 0.0000
+Stats for bwIATMean:
+→ Mean: 0.0313
+→ Median: 0.0000
+→ Std Dev: 0.3421
+→ Min: 0.0000
+→ Max: 20.0044
+5. CREATING VISUALIZATIONS:
+
+✓ Created time series plot
+
+✓ Created correlation heatmap
+
+✓ Created distribution plots
+6. ATTACK PATTERN ANALYSIS:
+Class Distribution:
+→ NORMAL: 2813741 instances (74.53%)
+→ c_ci_na_1: 58106 instances (1.54%)
+→ c_ci_na_1_DoS: 64079 instances (1.70%)
+→ c_rd_na_1: 86709 instances (2.30%)
+→ c_rd_na_1_DoS: 96360 instances (2.55%)
+→ c_rp_na_1: 84531 instances (2.24%)
+→ c_rp_na_1_DoS: 92770 instances (2.46%)
+→ c_sc_na_1: 68077 instances (1.80%)
+→ c_sc_na_1_DoS: 77306 instances (2.05%)
+→ c_se_na_1: 66691 instances (1.77%)
+→ c_se_na_1_DoS: 70816 instances (1.88%)
+→ m_sp_na_1_DoS: 127083 instances (3.37%)
+→ mitm_drop: 69265 instances (1.83%)
+========== ANALYSIS COMPLETE ==========

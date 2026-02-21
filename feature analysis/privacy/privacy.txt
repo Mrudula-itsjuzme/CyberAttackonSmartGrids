@@ -1,0 +1,20 @@
+>>> %Run simultationandpriv.py
+Running Script 1: Simulation and Privacy Techniques
+Adding adversarial noise to simulate attacks...
+Adversarial Noise Summary:
+Mean Difference: -0.0000
+Max Difference: 0.1000
+Augmenting data with transformations...
+Data Augmentation:   0%|          | 0/3 [00:00<?, ?it/s]Adding adversarial noise to simulate attacks...
+Adding adversarial noise to simulate attacks...
+Adding adversarial noise to simulate attacks...
+Data Augmentation: 100%|██████████| 3/3 [00:00<?, ?it/s]
+Augmented Data Summary:
+Mean Difference: 0.0002
+Max Difference: 0.0933
+Applying differential privacy using Laplace noise...
+Differential Privacy Summary:
+Mean Difference: 0.0020
+Max Difference: 10.4171
+Script 1 completed: Simulation and Privacy Techniques
+>>> 

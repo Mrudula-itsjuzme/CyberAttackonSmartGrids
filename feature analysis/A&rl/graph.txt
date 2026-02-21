@@ -1,0 +1,14 @@
+
+>>> %Run 'graph&embed.py'
+Running Script 3: Graph Analysis
+Creating temporal graph for anomaly analysis...
+Adding Edges: 100%|██████████| 999/999 [00:00<?, ?it/s]
+Visualizing the temporal graph...
+Graph saved to temporal_graph.png
+Calculating graph metrics...
+Number of Nodes: 207.0000
+Number of Edges: 108.0000
+Average Degree: 1.0435
+Density: 0.0051
+Script 3 completed: Graph Analysis
+>>> 

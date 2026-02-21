@@ -1,0 +1,110 @@
+>>> %Run 'Adversial&reinl.py'
+Running Script 2: Adversarial and Reinforcement Learning
+Setting up reinforcement learning environment...
+Training PPO model...
+Using cpu device
+C:\Users\MRUDULA\AppData\Local\Programs\Thonny\lib\site-packages\stable_baselines3\common\vec_env\patch_gym.py:49: UserWarning: You provided an OpenAI Gym environment. We strongly recommend transitioning to Gymnasium environments. Stable-Baselines3 is automatically wrapping your environments in a compatibility layer, which could potentially cause issues.
+  warnings.warn(
+Wrapping the env with a `Monitor` wrapper
+Wrapping the env in a DummyVecEnv.
+---------------------------------
+| rollout/           |          |
+|    ep_len_mean     | 1e+03    |
+|    ep_rew_mean     | -444     |
+| time/              |          |
+|    fps             | 1586     |
+|    iterations      | 1        |
+|    time_elapsed    | 1        |
+|    total_timesteps | 2048     |
+---------------------------------
+-----------------------------------------
+| rollout/                |             |
+|    ep_len_mean          | 1e+03       |
+|    ep_rew_mean          | -440        |
+| time/                   |             |
+|    fps                  | 687         |
+|    iterations           | 2           |
+|    time_elapsed         | 5           |
+|    total_timesteps      | 4096        |
+| train/                  |             |
+|    approx_kl            | 0.016346224 |
+|    clip_fraction        | 0.138       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -14.1       |
+|    explained_variance   | -0.0286     |
+|    learning_rate        | 0.0003      |
+|    loss                 | 0.418       |
+|    n_updates            | 10          |
+|    policy_gradient_loss | -0.0163     |
+|    std                  | 0.988       |
+|    value_loss           | 9.35        |
+-----------------------------------------
+------------------------------------------
+| rollout/                |              |
+|    ep_len_mean          | 1e+03        |
+|    ep_rew_mean          | -438         |
+| time/                   |              |
+|    fps                  | 584          |
+|    iterations           | 3            |
+|    time_elapsed         | 10           |
+|    total_timesteps      | 6144         |
+| train/                  |              |
+|    approx_kl            | 0.0111382995 |
+|    clip_fraction        | 0.0363       |
+|    clip_range           | 0.2          |
+|    entropy_loss         | -14.1        |
+|    explained_variance   | -0.0286      |
+|    learning_rate        | 0.0003       |
+|    loss                 | 0.697        |
+|    n_updates            | 20           |
+|    policy_gradient_loss | -0.00585     |
+|    std                  | 0.984        |
+|    value_loss           | 8.14         |
+------------------------------------------
+-----------------------------------------
+| rollout/                |             |
+|    ep_len_mean          | 1e+03       |
+|    ep_rew_mean          | -436        |
+| time/                   |             |
+|    fps                  | 580         |
+|    iterations           | 4           |
+|    time_elapsed         | 14          |
+|    total_timesteps      | 8192        |
+| train/                  |             |
+|    approx_kl            | 0.010698835 |
+|    clip_fraction        | 0.041       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -14         |
+|    explained_variance   | 0.003       |
+|    learning_rate        | 0.0003      |
+|    loss                 | 1.22        |
+|    n_updates            | 30          |
+|    policy_gradient_loss | -0.00738    |
+|    std                  | 0.98        |
+|    value_loss           | 7.95        |
+-----------------------------------------
+----------------------------------------
+| rollout/                |            |
+|    ep_len_mean          | 1e+03      |
+|    ep_rew_mean          | -434       |
+| time/                   |            |
+|    fps                  | 571        |
+|    iterations           | 5          |
+|    time_elapsed         | 17         |
+|    total_timesteps      | 10240      |
+| train/                  |            |
+|    approx_kl            | 0.01129806 |
+|    clip_fraction        | 0.0485     |
+|    clip_range           | 0.2        |
+|    entropy_loss         | -14        |
+|    explained_variance   | 0.00356    |
+|    learning_rate        | 0.0003     |
+|    loss                 | 2.59       |
+|    n_updates            | 40         |
+|    policy_gradient_loss | -0.00565   |
+|    std                  | 0.975      |
+|    value_loss           | 6.86       |
+----------------------------------------
+Evaluating trained PPO model...
+Training completed. Plotting results...
+Script 2 completed: Adversarial and Reinforcement Learning

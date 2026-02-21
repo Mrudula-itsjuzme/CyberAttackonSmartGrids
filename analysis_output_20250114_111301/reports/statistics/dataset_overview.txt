@@ -1,0 +1,830 @@
+Total Features: 208 columns
+Total Samples: 3775534 rows
+Memory Usage: 5991.45 MB
+Memory Usage (Deep): 8828.21 MB
+
+Column Data Types:
+  - timestamp: float64
+  - length: float64
+  - src_ip: object
+  - dst_ip: object
+  - protocol: float64
+  - Flow ID: object
+  - Src IP: object
+  - Src Port: object
+  - Dst IP: object
+  - Dst Port: float64
+  - Protocol: float64
+  - Timestamp: object
+  - Flow Duration: float64
+  - Tot Fwd Pkts: float64
+  - Tot Bwd Pkts: float64
+  - TotLen Fwd Pkts: float64
+  - TotLen Bwd Pkts: float64
+  - Fwd Pkt Len Max: float64
+  - Fwd Pkt Len Min: float64
+  - Fwd Pkt Len Mean: float64
+  - Fwd Pkt Len Std: object
+  - Bwd Pkt Len Max: float64
+  - Bwd Pkt Len Min: float64
+  - Bwd Pkt Len Mean: object
+  - Bwd Pkt Len Std: float64
+  - Flow Byts/s: float64
+  - Flow Pkts/s: float64
+  - Flow IAT Mean: float64
+  - Flow IAT Std: float64
+  - Flow IAT Max: float64
+  - Flow IAT Min: float64
+  - Fwd IAT Tot: float64
+  - Fwd IAT Mean: float64
+  - Fwd IAT Std: float64
+  - Fwd IAT Max: float64
+  - Fwd IAT Min: float64
+  - Bwd IAT Tot: float64
+  - Bwd IAT Mean: float64
+  - Bwd IAT Std: float64
+  - Bwd IAT Max: float64
+  - Bwd IAT Min: float64
+  - Fwd PSH Flags: float64
+  - Bwd PSH Flags: float64
+  - Fwd URG Flags: object
+  - Bwd URG Flags: float64
+  - Fwd Header Len: object
+  - Bwd Header Len: float64
+  - Fwd Pkts/s: float64
+  - Bwd Pkts/s: float64
+  - Pkt Len Min: float64
+  - Pkt Len Max: float64
+  - Pkt Len Mean: float64
+  - Pkt Len Std: float64
+  - Pkt Len Var: float64
+  - FIN Flag Cnt: object
+  - SYN Flag Cnt: float64
+  - RST Flag Cnt: float64
+  - PSH Flag Cnt: float64
+  - ACK Flag Cnt: float64
+  - URG Flag Cnt: float64
+  - CWE Flag Count: object
+  - ECE Flag Cnt: float64
+  - Down/Up Ratio: float64
+  - Pkt Size Avg: float64
+  - Fwd Seg Size Avg: float64
+  - Bwd Seg Size Avg: float64
+  - Fwd Byts/b Avg: float64
+  - Fwd Pkts/b Avg: object
+  - Fwd Blk Rate Avg: float64
+  - Bwd Byts/b Avg: float64
+  - Bwd Pkts/b Avg: float64
+  - Bwd Blk Rate Avg: float64
+  - Subflow Fwd Pkts: float64
+  - Subflow Fwd Byts: float64
+  - Subflow Bwd Pkts: float64
+  - Subflow Bwd Byts: float64
+  - Init Fwd Win Byts: float64
+  - Init Bwd Win Byts: float64
+  - Fwd Act Data Pkts: float64
+  - Fwd Seg Size Min: object
+  - Active Mean: float64
+  - Active Std: float64
+  - Active Max: object
+  - Active Min: float64
+  - Idle Mean: float64
+  - Idle Std: float64
+  - Idle Max: float64
+  - Idle Min: float64
+  - Label: object
+  - flow id: object
+  - protocol.1: object
+  - src ip: object
+  - dst ip: object
+  - src port: float64
+  - dst port: float64
+  - flow idle time max: float64
+  - flow idle time min: float64
+  - flow idle time mean: float64
+  - flow idle time std: float64
+  - flow idle time variance: float64
+  - flow active time max: float64
+  - flow active time min: float64
+  - flow active time mean: float64
+  - flow active time std: float64
+  - flow active time variance: float64
+  - flow IAT max: float64
+  - fw IAT max: float64
+  - bw IAT max: float64
+  - flow IAT min: float64
+  - fw IAT min: float64
+  - bw IAT min: float64
+  - flow IAT mean: float64
+  - fw IAT mean: float64
+  - bw IAT std: float64
+  - flow IAT std: float64
+  - fw IAT std: float64
+  - bw IAT std.1: float64
+  - flow IAT tot: float64
+  - fw iAT tot: float64
+  - bw IAT tot: float64
+  - flow iec104 packts/s: float64
+  - fw iec104 packts/s: float64
+  - bw iec104 packts/s: float64
+  - flow iec104 bytes/s: float64
+  - fw iec104 bytes/s: float64
+  - bw iec104 bytes/s: float64
+  - flow packet APDU length max: float64
+  - flow packet APDU length min: float64
+  - flow packet APDU length mean: float64
+  - flow packet APDU length std: float64
+  - flow packet APDU length var: float64
+  - fw packet APDU length max: float64
+  - fw packet APDU length min: float64
+  - fw packet APDU length mean: float64
+  - fw packet APDU length std: float64
+  - fw packet APDU length var: float64
+  - bw packet APDU length max: float64
+  - bw packet APDU length min: float64
+  - bw packet APDU length mean: float64
+  - bw packet APDU length std: float64
+  - bw packet APDU length var: float64
+  - total flow packets: float64
+  - total fw packets: float64
+  - total bw packets: float64
+  - flow packets APDU total length: float64
+  - fw packets APDU total length: float64
+  - bw packets APDU total length: float64
+  - flow duration: float64
+  - flow down/up ratio: float64
+  - flow total IEC104_I_Message_SeqIOA packets: float64
+  - fw total IEC104_I_Message_SeqIOA packets: float64
+  - bw total IEC104_I_Message_SeqIOA packets: float64
+  - flow total IEC104_I_Message_SingleIOA packets: float64
+  - fw total IEC104_I_Message_SingleIOA packets: float64
+  - bw total IEC104_I_Message_SingleIOA packets: float64
+  - flow total IEC104_S_Message packets: float64
+  - fw total IEC104_S_Message packets: float64
+  - bw total IEC104_S_Message packets: float64
+  - flow total IEC104_U_Message packets: float64
+  - fw total IEC104_U_Message packets: float64
+  - bw total IEC104_U_Message packets: float64
+  - fw URG flag amount: float64
+  - fw PSH flag amount: float64
+  - bw URG flag amount: float64
+  - bw PSH flag amount: float64
+  - flow SYN flag count: float64
+  - flow RST flag count: float64
+  - flow PSH flag count: float64
+  - flow ACK flag count: float64
+  - flow URG flag count: float64
+  - flow CWE flag count: float64
+  - flow ECE flag count: float64
+  - fw_subflow_packets: float64
+  - bw_subflow_packets: float64
+  - fw_subflow_bytes: float64
+  - bw_subflow_bytes: float64
+  - flow start timestamp: object
+  - fw avg bytes/bulk: float64
+  - bw avg bytes/bulk: float64
+  - fw avg bulk rate: float64
+  - bw avg bulk rate: float64
+  - fw avg packets/bulk: float64
+  - bw avg packets/bulk: float64
+  - init fw window bytes: float64
+  - init bw window bytes: float64
+  - fw TCP total header length: float64
+  - bw TCP total header length: float64
+  - cot=1: float64
+  - cot=2: float64
+  - cot=3: float64
+  - cot=4: float64
+  - cot=5: float64
+  - cot=6: float64
+  - cot=7: float64
+  - cot=8: float64
+  - cot=9: float64
+  - cot=10: float64
+  - cot=11: float64
+  - cot=12: float64
+  - cot=13: float64
+  - cot=20: float64
+  - type_id_process_information_in_monitor_direction: float64
+  - type_id_process_information_in_control_direction: float64
+  - type_id_system_information_in_monitor_direction: float64
+  - type_id_system_information_in_control_direction: float64
+  - type_id_parameter_in_control_direction: float64
+  - type_id_file_transfer: float64
+  - bw IAT mean: float64
+
+Unique Values Analysis:
+
+  - timestamp: 1034055 unique values
+
+  - length: 28 unique values
+
+  - src_ip: 11 unique values
+
+  - dst_ip: 11 unique values
+
+  - protocol: 1 unique values
+      6.0: 1036761
+
+  - Flow ID: 312638 unique values
+
+  - Src IP: 44 unique values
+
+  - Src Port: 25498 unique values
+
+  - Dst IP: 29755 unique values
+
+  - Dst Port: 6229 unique values
+
+  - Protocol: 9 unique values
+      17.0: 3004877
+      0.0: 420159
+      6.0: 350492
+      6468014.688756747: 1
+      110.0: 1
+      159.0: 1
+      119005916.0: 1
+      12.0: 1
+      40.6666666666667: 1
+
+  - Timestamp: 181792 unique values
+
+  - Flow Duration: 699850 unique values
+
+  - Tot Fwd Pkts: 365 unique values
+
+  - Tot Bwd Pkts: 364 unique values
+
+  - TotLen Fwd Pkts: 467 unique values
+
+  - TotLen Bwd Pkts: 784 unique values
+
+  - Fwd Pkt Len Max: 52 unique values
+
+  - Fwd Pkt Len Min: 39 unique values
+
+  - Fwd Pkt Len Mean: 2233 unique values
+
+  - Fwd Pkt Len Std: 2743 unique values
+
+  - Bwd Pkt Len Max: 57 unique values
+
+  - Bwd Pkt Len Min: 37 unique values
+
+  - Bwd Pkt Len Mean: 3613 unique values
+
+  - Bwd Pkt Len Std: 4806 unique values
+
+  - Flow Byts/s: 451116 unique values
+
+  - Flow Pkts/s: 769276 unique values
+
+  - Flow IAT Mean: 773290 unique values
+
+  - Flow IAT Std: 694971 unique values
+
+  - Flow IAT Max: 608469 unique values
+
+  - Flow IAT Min: 269085 unique values
+
+  - Fwd IAT Tot: 514130 unique values
+
+  - Fwd IAT Mean: 547938 unique values
+
+  - Fwd IAT Std: 535154 unique values
+
+  - Fwd IAT Max: 440481 unique values
+
+  - Fwd IAT Min: 182431 unique values
+
+  - Bwd IAT Tot: 143840 unique values
+
+  - Bwd IAT Mean: 171607 unique values
+
+  - Bwd IAT Std: 246504 unique values
+
+  - Bwd IAT Max: 88532 unique values
+
+  - Bwd IAT Min: 36332 unique values
+
+  - Fwd PSH Flags: 7 unique values
+      0.0: 3775528
+      89.0: 1
+      0.1037622219634665: 1
+      16.0: 1
+      1.0: 1
+      20965107.0: 1
+      10007162.0: 1
+
+  - Bwd PSH Flags: 7 unique values
+      0.0: 3656382
+      1.0: 119147
+      -1.0: 1
+      0.1131951512328725: 1
+      8.310344827586208: 1
+      8.333333333333334: 1
+      5996960.0: 1
+
+  - Fwd URG Flags: 7 unique values
+      0: 3771433
+      0: 4095
+      6.0: 2
+      254.0: 1
+      4.175638944057904: 1
+      No Label: 1
+      10007162: 1
+
+  - Bwd URG Flags: 7 unique values
+      0.0: 3775528
+      14.0: 1
+      8.0: 1
+      16.0: 1
+      17.435960591133007: 1
+      10.071428571428571: 1
+      10007162.0: 1
+
+  - Fwd Header Len: 381 unique values
+
+  - Bwd Header Len: 427 unique values
+
+  - Fwd Pkts/s: 730953 unique values
+
+  - Bwd Pkts/s: 738336 unique values
+
+  - Pkt Len Min: 31 unique values
+
+  - Pkt Len Max: 56 unique values
+
+  - Pkt Len Mean: 7693 unique values
+
+  - Pkt Len Std: 9909 unique values
+
+  - Pkt Len Var: 10528 unique values
+
+  - FIN Flag Cnt: 7 unique values
+      0: 3771411
+      0: 4095
+      1.0: 24
+      8477783.0: 1
+      No Label: 1
+      8.607142857142858: 1
+      141.0: 1
+
+  - SYN Flag Cnt: 5 unique values
+      0.0: 3626186
+      1.0: 149345
+      48.0: 1
+      6.0: 1
+      -1.0: 1
+
+  - RST Flag Cnt: 5 unique values
+      0.0: 3775515
+      1.0: 16
+      9783638.555555556: 1
+      10.071428571428571: 1
+      255.0: 1
+
+  - PSH Flag Cnt: 5 unique values
+      0.0: 3656384
+      1.0: 119147
+      6083728.219227728: 1
+      7.913043478260869: 1
+      13.0: 1
+
+  - ACK Flag Cnt: 4 unique values
+      0.0: 3568438
+      1.0: 207094
+      20575323.0: 1
+      6.0: 1
+
+  - URG Flag Cnt: 4 unique values
+      0.0: 3775531
+      5895349.0: 1
+      9.166666666666666: 1
+      1756534.9: 1
+
+  - CWE Flag Count: 4 unique values
+      0: 3771437
+      0: 4095
+      No Label: 1
+      1872797.7426538705: 1
+
+  - ECE Flag Cnt: 2 unique values
+      0.0: 3775533
+      4002443.0: 1
+
+  - Down/Up Ratio: 30 unique values
+
+  - Pkt Size Avg: 6197 unique values
+
+  - Fwd Seg Size Avg: 1629 unique values
+
+  - Bwd Seg Size Avg: 2549 unique values
+
+  - Fwd Byts/b Avg: 4 unique values
+      0.0: 3775531
+      11.0: 1
+      141.0: 1
+      5998491.0: 1
+
+  - Fwd Pkts/b Avg: 5 unique values
+      0: 3771436
+      0: 4095
+      66.0: 1
+      -1.0: 1
+      No Label: 1
+
+  - Fwd Blk Rate Avg: 3 unique values
+      0.0: 3775532
+      12.0: 1
+      255.0: 1
+
+  - Bwd Byts/b Avg: 3 unique values
+      0.0: 3775532
+      110.0: 1
+      14.0: 1
+
+  - Bwd Pkts/b Avg: 2 unique values
+      0.0: 3775533
+      -1.0: 1
+
+  - Bwd Blk Rate Avg: 3 unique values
+      0.0: 3775532
+      252.0: 1
+      2338128.6: 1
+
+  - Subflow Fwd Pkts: 363 unique values
+
+  - Subflow Fwd Byts: 464 unique values
+
+  - Subflow Bwd Pkts: 361 unique values
+
+  - Subflow Bwd Byts: 782 unique values
+
+  - Init Fwd Win Byts: 4 unique values
+      -1.0: 3673463
+      0.0: 102069
+      8000693.0: 1
+      5724720.319643282: 1
+
+  - Init Bwd Win Byts: 26 unique values
+
+  - Fwd Act Data Pkts: 174 unique values
+
+  - Fwd Seg Size Min: 4 unique values
+      0: 3771437
+      0: 4095
+      6571210.865392816: 1
+      No Label: 1
+
+  - Active Mean: 258128 unique values
+
+  - Active Std: 174073 unique values
+
+  - Active Max: 234708 unique values
+
+  - Active Min: 138347 unique values
+
+  - Idle Mean: 442780 unique values
+
+  - Idle Std: 240570 unique values
+
+  - Idle Max: 408424 unique values
+
+  - Idle Min: 401327 unique values
+
+  - Label: 13 unique values
+
+  - flow id: 11970 unique values
+
+  - protocol.1: 3 unique values
+      0: 3243054
+      0: 485116
+      IEC-60870-5-104: 47364
+
+  - src ip: 13 unique values
+
+  - dst ip: 13 unique values
+
+  - src port: 6101 unique values
+
+  - dst port: 146 unique values
+
+  - flow idle time max: 57770 unique values
+
+  - flow idle time min: 57438 unique values
+
+  - flow idle time mean: 70672 unique values
+
+  - flow idle time std: 40347 unique values
+
+  - flow idle time variance: 40315 unique values
+
+  - flow active time max: 64902 unique values
+
+  - flow active time min: 30811 unique values
+
+  - flow active time mean: 71208 unique values
+
+  - flow active time std: 61202 unique values
+
+  - flow active time variance: 61144 unique values
+
+  - flow IAT max: 64523 unique values
+
+  - fw IAT max: 60829 unique values
+
+  - bw IAT max: 64649 unique values
+
+  - flow IAT min: 15228 unique values
+
+  - fw IAT min: 37504 unique values
+
+  - bw IAT min: 14738 unique values
+
+  - flow IAT mean: 81862 unique values
+
+  - fw IAT mean: 71450 unique values
+
+  - bw IAT std: 69135 unique values
+
+  - flow IAT std: 75761 unique values
+
+  - fw IAT std: 30698 unique values
+
+  - bw IAT std.1: 22268 unique values
+
+  - flow IAT tot: 80885 unique values
+
+  - fw iAT tot: 71876 unique values
+
+  - bw IAT tot: 73911 unique values
+
+  - flow iec104 packts/s: 82740 unique values
+
+  - fw iec104 packts/s: 82817 unique values
+
+  - bw iec104 packts/s: 75630 unique values
+
+  - flow iec104 bytes/s: 83033 unique values
+
+  - fw iec104 bytes/s: 82729 unique values
+
+  - bw iec104 bytes/s: 76028 unique values
+
+  - flow packet APDU length max: 7 unique values
+      0.0: 3673474
+      14.0: 73605
+      16.0: 13090
+      18.0: 9431
+      4.0: 5246
+      22.0: 541
+      13.0: 147
+
+  - flow packet APDU length min: 4 unique values
+      0.0: 3673474
+      4.0: 101822
+      14.0: 233
+      13.0: 5
+
+  - flow packet APDU length mean: 2402 unique values
+
+  - flow packet APDU length std: 3091 unique values
+
+  - flow packet APDU length var: 3120 unique values
+
+  - fw packet APDU length max: 7 unique values
+      0.0: 3673474
+      14.0: 87267
+      4.0: 11044
+      16.0: 1891
+      18.0: 1288
+      22.0: 463
+      13.0: 107
+
+  - fw packet APDU length min: 3 unique values
+      0.0: 3673474
+      4.0: 97075
+      14.0: 4985
+
+  - fw packet APDU length mean: 686 unique values
+
+  - fw packet APDU length std: 822 unique values
+
+  - fw packet APDU length var: 827 unique values
+
+  - bw packet APDU length max: 7 unique values
+      0.0: 3682659
+      14.0: 44853
+      4.0: 18666
+      16.0: 11199
+      13.0: 9936
+      18.0: 8143
+      22.0: 78
+
+  - bw packet APDU length min: 5 unique values
+      0.0: 3682659
+      4.0: 92324
+      14.0: 545
+      13.0: 5
+      16.0: 1
+
+  - bw packet APDU length mean: 509 unique values
+
+  - bw packet APDU length std: 611 unique values
+
+  - bw packet APDU length var: 617 unique values
+
+  - total flow packets: 454 unique values
+
+  - total fw packets: 302 unique values
+
+  - total bw packets: 181 unique values
+
+  - flow packets APDU total length: 1390 unique values
+
+  - fw packets APDU total length: 685 unique values
+
+  - bw packets APDU total length: 415 unique values
+
+  - flow duration: 83022 unique values
+
+  - flow down/up ratio: 1703 unique values
+
+  - flow total IEC104_I_Message_SeqIOA packets: 1 unique values
+      0.0: 3775534
+
+  - fw total IEC104_I_Message_SeqIOA packets: 1 unique values
+      0.0: 3775534
+
+  - bw total IEC104_I_Message_SeqIOA packets: 1 unique values
+      0.0: 3775534
+
+  - flow total IEC104_I_Message_SingleIOA packets: 310 unique values
+
+  - fw total IEC104_I_Message_SingleIOA packets: 303 unique values
+
+  - bw total IEC104_I_Message_SingleIOA packets: 131 unique values
+
+  - flow total IEC104_S_Message packets: 108 unique values
+
+  - fw total IEC104_S_Message packets: 91 unique values
+
+  - bw total IEC104_S_Message packets: 107 unique values
+
+  - flow total IEC104_U_Message packets: 24 unique values
+
+  - fw total IEC104_U_Message packets: 14 unique values
+
+  - bw total IEC104_U_Message packets: 14 unique values
+
+  - fw URG flag amount: 1 unique values
+      0.0: 3775534
+
+  - fw PSH flag amount: 302 unique values
+
+  - bw URG flag amount: 1 unique values
+      0.0: 3775534
+
+  - bw PSH flag amount: 181 unique values
+
+  - flow SYN flag count: 1 unique values
+      0.0: 3775534
+
+  - flow RST flag count: 1 unique values
+      0.0: 3775534
+
+  - flow PSH flag count: 454 unique values
+
+  - flow ACK flag count: 454 unique values
+
+  - flow URG flag count: 1 unique values
+      0.0: 3775534
+
+  - flow CWE flag count: 1 unique values
+      0.0: 3775534
+
+  - flow ECE flag count: 1 unique values
+      0.0: 3775534
+
+  - fw_subflow_packets: 53 unique values
+
+  - bw_subflow_packets: 41 unique values
+
+  - fw_subflow_bytes: 166 unique values
+
+  - bw_subflow_bytes: 133 unique values
+
+  - flow start timestamp: 26366 unique values
+
+  - fw avg bytes/bulk: 1527 unique values
+
+  - bw avg bytes/bulk: 293 unique values
+
+  - fw avg bulk rate: 5207 unique values
+
+  - bw avg bulk rate: 1003 unique values
+
+  - fw avg packets/bulk: 1320 unique values
+
+  - bw avg packets/bulk: 265 unique values
+
+  - init fw window bytes: 374 unique values
+
+  - init bw window bytes: 375 unique values
+
+  - fw TCP total header length: 316 unique values
+
+  - bw TCP total header length: 197 unique values
+
+  - cot=1: 6 unique values
+      0.0: 3766107
+      1.0: 8546
+      2.0: 621
+      3.0: 248
+      4.0: 11
+      5.0: 1
+
+  - cot=2: 1 unique values
+      0.0: 3775534
+
+  - cot=3: 312 unique values
+
+  - cot=4: 1 unique values
+      0.0: 3775534
+
+  - cot=5: 1 unique values
+      0.0: 3775534
+
+  - cot=6: 2 unique values
+      0.0: 3707235
+      1.0: 68299
+
+  - cot=7: 6 unique values
+      0.0: 3694641
+      1.0: 62471
+      2.0: 12021
+      3.0: 5079
+      4.0: 1257
+      5.0: 65
+
+  - cot=8: 1 unique values
+      0.0: 3775534
+
+  - cot=9: 1 unique values
+      0.0: 3775534
+
+  - cot=10: 6 unique values
+      0.0: 3757547
+      1.0: 15523
+      2.0: 1831
+      3.0: 603
+      4.0: 29
+      5.0: 1
+
+  - cot=11: 1 unique values
+      0.0: 3775534
+
+  - cot=12: 1 unique values
+      0.0: 3775534
+
+  - cot=13: 1 unique values
+      0.0: 3775534
+
+  - cot=20: 2 unique values
+      0.0: 3759507
+      1.0: 16027
+
+  - type_id_process_information_in_monitor_direction: 318 unique values
+
+  - type_id_process_information_in_control_direction: 9 unique values
+      0.0: 3748888
+      2.0: 12266
+      3.0: 11452
+      1.0: 1118
+      4.0: 1064
+      6.0: 595
+      5.0: 120
+      8.0: 24
+      7.0: 7
+
+  - type_id_system_information_in_monitor_direction: 1 unique values
+      0.0: 3775534
+
+  - type_id_system_information_in_control_direction: 8 unique values
+      0.0: 3717288
+      2.0: 44778
+      4.0: 4263
+      3.0: 4237
+      1.0: 4094
+      5.0: 814
+      6.0: 59
+      7.0: 1
+
+  - type_id_parameter_in_control_direction: 1 unique values
+      0.0: 3775534
+
+  - type_id_file_transfer: 1 unique values
+      0.0: 3775534
+
+  - bw IAT mean: 53147 unique values

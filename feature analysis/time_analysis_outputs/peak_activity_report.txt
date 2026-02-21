@@ -1,0 +1,17 @@
+Peak Activity Analysis
+=====================
+Average activity: 7.38 records/timestamp
+Activity threshold: 24.28 records/timestamp
+Number of peak activity periods: 10900
+
+Top 10 Peak Activity Timestamps:
+1970-01-01 00:00:01.587774472: 47 records
+1970-01-01 00:00:01.587764168: 46 records
+1970-01-01 00:00:01.587768279: 45 records
+1970-01-01 00:00:01.587770246: 45 records
+1970-01-01 00:00:01.587773926: 45 records
+1970-01-01 00:00:01.587774498: 45 records
+1970-01-01 00:00:01.587764192: 44 records
+1970-01-01 00:00:01.587765297: 44 records
+1970-01-01 00:00:01.587765960: 44 records
+1970-01-01 00:00:01.587766642: 44 records

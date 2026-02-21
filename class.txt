@@ -1,0 +1,58 @@
+
+Final dataset statistics:
+Feature matrix shape: (3775534, 207)
+Target vector shape: (3775534,)
+Training models:   0%|                                                                                                                                                                                 | 0/4 [00:00<?, ?it/s]
+Training RF...
+Model saved to: ids_output\models\rf_model.pkl
+Training models:  25%|██████████████████████████████████████████                                                                                                                              | 1/4 [03:49<11:27, 229.20s/it]
+Training XGB...
+C:\Users\VARUN\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\xgboost\core.py:158: UserWarning: [13:29:51] WARNING: C:\buildkite-agent\builds\buildkite-windows-cpu-autoscaling-group-i-0c55ff5f71b100e98-1\xgboost\xgboost-ci-windows\src\learner.cc:740:
+Parameters: { "use_label_encoder" } are not used.
+
+  warnings.warn(smsg, UserWarning)
+Model saved to: ids_output\models\xgb_model.pkl
+Training models:  50%|████████████████████████████████████████████████████████████████████████████████████                                                                                    | 2/4 [10:42<11:14, 337.37s/it]
+Training LIGHTGBM...
+C:\Users\VARUN\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\sklearn\utils\deprecation.py:151: FutureWarning: 'force_all_finite' was renamed to 'ensure_all_finite' in 1.6 and will be removed in 1.8.
+  warnings.warn(
+[LightGBM] [Info] Auto-choosing row-wise multi-threading, the overhead of testing was 0.227153 seconds.
+You can set `force_row_wise=true` to remove the overhead.
+And if memory is not enough, you can set `force_col_wise=true`.
+[LightGBM] [Info] Total Bins 24387
+[LightGBM] [Info] Number of data points in the train set: 3020427, number of used features: 174
+[LightGBM] [Info] Start training from score -3.630964
+[LightGBM] [Info] Start training from score -3.684198
+[LightGBM] [Info] Start training from score -2.635073
+[LightGBM] [Info] Start training from score -5.126678
+[LightGBM] [Info] Start training from score -3.631052
+[LightGBM] [Info] Start training from score -5.114814
+[LightGBM] [Info] Start training from score -3.648031
+[LightGBM] [Info] Start training from score -3.642049
+[LightGBM] [Info] Start training from score -4.729164
+[LightGBM] [Info] Start training from score -3.669881
+[LightGBM] [Info] Start training from score -3.638479
+[LightGBM] [Info] Start training from score -0.321032
+[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+C:\Users\VARUN\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\sklearn\utils\deprecation.py:151: FutureWarning: 'force_all_finite' was renamed to 'ensure_all_finite' in 1.6 and will be removed in 1.8.
+  warnings.warn(
+Model saved to: ids_output\models\lightgbm_model.pkl
+Training models:  75%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████                                          | 3/4 [12:48<04:01, 241.06s/it]
+Training DECISION_TREE...
+Model saved to: ids_output\models\decision_tree_model.pkl
+Training models: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 4/4 [13:31<00:00, 202.96s/it]
+
+Model Accuracies:
+RF: 0.8766
+XGB: 0.9041
+LIGHTGBM: 0.8765
+DECISION_TREE: 0.8995

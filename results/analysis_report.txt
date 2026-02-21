@@ -1,0 +1,49 @@
+=== Network Traffic Classification Analysis Report ===
+
+Analysis performed on: 08-Jan-2025 21:24:40
+
+Configuration:
+- Sample size: 20000
+- Cross-validation folds: 5
+- GPU utilization: true
+- Parallel processing: true
+
+Model Performance:
+DT:
+  Accuracy: 91.16% (±0.43%)
+  Average training time: 0.30 seconds
+
+RF:
+  Accuracy: 91.66% (±0.45%)
+  Average training time: 111.49 seconds
+
+SVM:
+  Accuracy: 76.65% (±0.90%)
+  Average training time: 0.18 seconds
+
+KNN:
+  Accuracy: 76.65% (±0.90%)
+  Average training time: 1.25 seconds
+
+GB:
+  Accuracy: 18.51% (±41.39%)
+  Average training time: 3.95 seconds
+
+NN:
+  Accuracy: 0.01% (±0.01%)
+  Average training time: 1.45 seconds
+
+ENSEMBLE:
+  Accuracy: 91.81%
+
+Top 10 Most Important Features:
+1. FlowPkts_s (correlation: NaN)
+2. FwdPSHFlags (correlation: NaN)
+3. FwdURGFlags (correlation: NaN)
+4. BwdURGFlags (correlation: NaN)
+5. FINFlagCnt (correlation: NaN)
+6. RSTFlagCnt (correlation: NaN)
+7. URGFlagCnt (correlation: NaN)
+8. CWEFlagCount (correlation: NaN)
+9. ECEFlagCnt (correlation: NaN)
+10. FwdByts_bAvg (correlation: NaN)
