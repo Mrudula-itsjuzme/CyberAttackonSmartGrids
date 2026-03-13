@@ -1,0 +1,22 @@
+flowchart LR
+    A[IEC-104 Traffic and Logs] --> B[Preprocessing and Cleaning]
+    B --> C[Feature Engineering]
+    C --> D[Model Training]
+
+    D --> D1[Decision Tree]
+    D --> D2[Random Forest]
+    D --> D3[SVM and KNN]
+    D --> D4[Ensemble]
+
+    D1 --> E[Evaluation]
+    D2 --> E
+    D3 --> E
+    D4 --> E
+
+    E --> F[Confusion Matrix and Metrics]
+    E --> G[Ablation and Improvement Analysis]
+    E --> H[Explainability and Feature Importance]
+
+    F --> I[Detection Insights for Grid Security]
+    G --> I
+    H --> I
