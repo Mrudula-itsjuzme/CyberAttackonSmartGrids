@@ -6,7 +6,7 @@ import pandas as pd
 import joblib
 import os
 import plotly.express as px
-import plotly.graph_objects as go
+import plotly.graph_objects as go`nfrom typing import Optional
 
 st.set_page_config(layout="wide", page_title="Drift & Adversarial UI", page_icon="⚔️")
 
@@ -15,8 +15,7 @@ sns.set(style="whitegrid")
 DATA_PATH = os.getenv("CYBERGRID_DATA_PATH", "intermediate_combined_data.csv")
 MODEL_PATH = os.getenv("CYBERGRID_MODEL_PATH", "ids_output/models/decision_tree_model.pkl")
 
-@st.cache_data
-def load_data():
+@st.cache_data`ndef load_data() -> pd.DataFrame:
     if not os.path.exists(DATA_PATH):
         st.warning("Dataset not found, generating mock data.")
         return pd.DataFrame(np.random.rand(1000, 5), columns=["Feature 1", "Feature 2", "Feature 3", "Feature 4", "Feature 5"])
@@ -24,8 +23,7 @@ def load_data():
     df = df.select_dtypes(include=[np.number])
     return df
 
-@st.cache_resource
-def load_model():
+@st.cache_resource`ndef load_model() -> Optional[object]:
     if not os.path.exists(MODEL_PATH):
         st.warning("Model not found, skipping predictions.")
         return None
