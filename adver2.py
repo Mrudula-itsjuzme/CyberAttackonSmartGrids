@@ -12,8 +12,8 @@ st.set_page_config(layout="wide", page_title="Drift & Adversarial UI", page_icon
 
 sns.set(style="whitegrid")
 
-DATA_PATH = r"G:/Sem 1/Cyberattack_on_smartGrid/intermediate_combined_data.csv"
-MODEL_PATH = r"G:/Sem 1/Cyberattack_on_smartGrid/ids_output/models/decision_tree_model.pkl"
+DATA_PATH = os.getenv("CYBERGRID_DATA_PATH", "intermediate_combined_data.csv")
+MODEL_PATH = os.getenv("CYBERGRID_MODEL_PATH", "ids_output/models/decision_tree_model.pkl")
 
 @st.cache_data
 def load_data():
