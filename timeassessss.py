@@ -7,7 +7,12 @@ from scipy import stats
 
 # Read the data
 print("Reading data from CSV file...")
-data_path = os.getenv("CYBERGRID_DATA_PATH", "intermediate_combined_data.csv")`nprint(f"Using dataset: {data_path}")`ndf = pd.read_csv(data_path,`n                 low_memory=False)
+data_path = os.getenv("CYBERGRID_DATA_PATH", "intermediate_combined_data.csv")
+print(f"Using dataset: {data_path}")
+df = pd.read_csv(
+    data_path,
+    low_memory=False,
+)
 
 # Create figure
 fig, ((ax1, ax2), (ax3, ax4)) = plt.subplots(2, 2, figsize=(15, 10))
