@@ -8,7 +8,7 @@ import random
 import os
 
 # ---- CONFIG ----
-DATA_PATH = "G:/Sem1/Cyberattack_on_smartGrid/intermediate_combined_data.csv"  # path to dataset
+DATA_PATH = os.getenv("CYBERGRID_DATA_PATH", "intermediate_combined_data.csv")  # path to dataset
 CHUNKSIZE = 50000
 SAMPLE_SIZE = 500  # per category per chunk
 EPSILON = 0.05
